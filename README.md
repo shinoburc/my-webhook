@@ -6,6 +6,8 @@
 $ sudo apt install webhook
 ```
 
+or instlal [webhook](https://github.com/adnanh/webhook).
+
 ```sh
 $ git clone https://github.com/shinoburc/my-webhook.git
 $ cd my-webhook
