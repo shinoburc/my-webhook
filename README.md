@@ -1,12 +1,14 @@
 # my-webhook
 
-## Setup
+## Install webhook
 
 ```sh
 $ sudo apt install webhook
 ```
 
 or instlal [webhook](https://github.com/adnanh/webhook).
+
+## Setup
 
 ```sh
 $ git clone https://github.com/shinoburc/my-webhook.git
