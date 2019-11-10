@@ -30,6 +30,8 @@ edit `hooks.json`
 $ ./setup-systemd.sh
 ```
 
+setup [GitHub](https://github.com) webhook on your repository.
+
 ## Reference
 
 - [adnanh/webhook](https://github.com/adnanh/webhook)
