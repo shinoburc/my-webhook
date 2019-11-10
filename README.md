@@ -28,7 +28,7 @@ sed -i -e "s/<secret>/${SECRET}/" hooks.json
 $ ./setup-secret.sh
 ```
 
-edit `hooks.json`
+edit `hooks.json` and
 
 ```sh
 $ ./setup-systemd.sh
