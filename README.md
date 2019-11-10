@@ -20,10 +20,13 @@ SECRET="your_strong_secret"
 sed -i -e "s/<secret>/${SECRET}/" hooks.json
 ```
 
+```sh
+$ ./setup-secret.sh
+```
+
 edit `hooks.json`
 
 ```sh
-$ ./setup-secret.sh
 $ ./setup-systemd.sh
 ```
 
