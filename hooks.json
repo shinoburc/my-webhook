@@ -39,5 +39,45 @@
         }
       }
     }
+  },
+  {
+    "id": "advtech",
+    "execute-command": "/home/dot/work/my-webhook/script/advtech.sh",
+    "response-message": "I got the payload!",
+    "response-headers":
+    [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "*"
+      }
+    ],
+    "pass-arguments-to-command":
+    [
+      {
+        "source": "payload",
+        "name": "head_commit.id"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.name"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.email"
+      }
+    ],
+    "trigger-rule":
+    {
+      "match":
+      {
+        "type": "payload-hash-sha1",
+        "secret": "<secret>",
+        "parameter":
+        {
+          "source": "header",
+          "name": "X-Hub-Signature"
+        }
+      }
+    }
   }
 ]
